@@ -4,3 +4,8 @@ This is another line
 THis is the best line 
 Hello how are you
 
+I have inserted many lines.
+hello
+this is a text file
+i am going to commit this file
+
