@@ -387,18 +387,16 @@ textarea{
 
 
 .cardgroup{
-    padding:10px;
-  
-    width: 100%;
-    height: auto;
+    width:99%;
+    text-align:center;
+    
 }
 .card{
-    display: inline-block;
-  
-    height:500px;
-    width:400px;
-    border: 1px solid black;
-    padding:24px;
+    width:30%;
+    
+    height:650px;
+    display:inline-block;
+    overflow: hidden
 }
 
 .hover-primary ,.focus{
