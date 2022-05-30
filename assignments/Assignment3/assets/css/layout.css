@@ -1,0 +1,178 @@
+/*Header section */
+.header{
+    width: 100%;
+    height: auto;
+ 
+    
+}
+.logo{
+    float:left;
+    padding:32px 0px 37px 40px;
+}
+.nav-group{
+    float:right;
+    height: auto;
+    padding:45px 40px 32px 0px;
+}
+.nav-item{
+    display: inline-block;
+   
+}
+
+
+
+
+
+/*hero component */
+
+.hero{
+    height:584px;
+  
+    margin-top: 20px;
+    position: relative;
+}
+.info{
+    height: 467px;
+    width:500px;
+ 
+    position: absolute;
+    top:58.5px;
+}
+
+.buttons{
+    position: absolute;
+    bottom:16px;
+}
+.hero-secondary{
+    margin-left:12px;
+}
+/*what we do */
+
+.what-we-do{
+    height: 313px;
+    margin-top: 72px;
+  
+}
+.head{
+    text-align: center;
+    line-height: 97px;
+}
+
+.works{
+
+    height:216px;
+    width: 100%;
+   
+
+}
+
+.work{
+    width:285px;
+    height:216px;
+    vertical-align: top;
+
+    text-align: center;
+
+    display: inline-block;
+}
+.work img{
+   
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+
+/*blog*/
+
+.blog{
+    height:887px;
+    margin-top:72px;
+    background-color: #F8F8F8;
+    position: relative;
+}
+.blog-brand{
+
+    text-align: center;
+    width: 559px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 72px;
+}
+.blog-brand p{
+    color:#797979;
+}
+.blogs{
+    height:auto;
+    width:1240px;
+    margin-left: auto;
+    margin-right: auto;
+   margin-top: 35px;
+   
+}
+.blog-card{
+   
+    width:387px;
+   
+    position: relative;
+    vertical-align: top;
+
+    margin-right: 20px;
+    display: inline-block;
+}
+.img-container{
+    width:386;
+    height: 281;
+}
+.img-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.blog-card .content{
+    padding-top: 5px;
+    height: 154px;
+
+}
+
+/*footer*/
+
+footer{
+    height:398px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1%;
+}
+
+.list-container{
+    display: inline-block;
+    vertical-align: top;
+ 
+}
+
+.footer-info{
+
+    width: 398px;
+    height: 129px;
+    padding-top: 72px;
+    float:left;
+}
+.footer-info p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-lists{
+    padding-top: 72px;
+    float:right;
+    width:521px;
+ 
+}
+.footer-list{
+    padding-top: 24px;
+    list-style: none;
+
+}
+.footer-item{
+    padding-bottom: 14px;
+}
