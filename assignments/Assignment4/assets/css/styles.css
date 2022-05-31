@@ -1,0 +1,92 @@
+/*nav items*/
+
+.nav-link{
+    font-size: 16px;
+    text-decoration: none;
+    padding-right:48px;
+    color:#797979;
+}
+header>h1{
+    font-size: 30px;
+}
+.blue,.active{
+    color:#4E42D9;
+}
+
+/*hero section*/
+
+.info>h1{
+    font-weight:900;
+    color:#3B3950;
+    font-size: 36px;
+}
+.info{
+    font-weight: 400;
+    color:#797979;
+}
+
+
+/*what we do*/
+
+.head h1{
+    font-size: 32;
+    font-weight: 600;
+    color:#3B3950;
+}
+.work h1{
+    font-size: 25px;
+    font-weight: 500;
+    color:#3B3950;
+}
+.work p{
+    color:#797979;
+    font-size: 16px;
+}
+
+/*blog */
+
+.blog-card h6{
+    font-size: 14;
+    color: #797979;
+    font-weight: 500;
+}
+
+.blog-card h3{
+    font-size: 18;
+    color: #3B3950;
+    font-weight: 700;
+}
+.blog-card p{
+    padding-top: 5px;
+    color:#797979;
+    font-size: 16px;
+}
+
+
+/*footer*/
+
+.footer-item a{
+    text-decoration: none;
+    color:white;
+    font-size:16px;
+  
+}
+.foot-group{
+    color:white;
+
+    background-color: #292838;
+}
+.copyright{
+   
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    background-color: #23222F;
+    color:white;
+
+
+}
+.copyright p{
+    font-weight:500;
+    font-size: 14px;
+}

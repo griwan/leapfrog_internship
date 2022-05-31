@@ -1,0 +1,209 @@
+/*Header section */
+.header{
+    width: 100%;
+    height: auto;
+ 
+    
+}
+.logo{
+    float:left;
+    padding:32px 0px 37px 40px;
+}
+.nav-group{
+    float:right;
+    height: auto;
+    padding:45px 40px 32px 0px;
+}
+.nav-item{
+    display: inline-block;
+   
+}
+.check-btn{
+    float:right;
+    padding:26px 41px;
+    display: none;
+}
+#check{
+    display: none;
+}
+.cross-btn{
+    float:right;
+    padding:26px 41px;
+    display: none;
+}
+#cross{
+    display: none;
+}
+
+
+
+/*hero component */
+
+.hero{
+ 
+
+    margin-top: 20px;
+    height: auto;
+}
+.info{
+    height: 467px;
+    width:41%;
+ 
+    overflow:visible;
+    margin-top:58.5px;
+}
+
+.buttons{
+    top:30px;
+    position: relative;
+    bottom:16px;
+}
+.buttons .btn{
+    display: inline-block;
+    margin-top: 10px;
+}
+.hero-secondary{
+    margin-left:12px;
+}
+.hero>.image{
+    background-image: url('/Class/Assignment3/assets/img/hero\ image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*what we do */
+
+.what-we-do{
+    height: auto;
+    margin-top: 100px;
+  
+
+}
+.head{
+    text-align: center;
+    line-height: 97px;
+
+}
+
+.works{
+   width: 100%;
+    position: relative;
+   margin-left: auto;
+   margin-right: auto;
+
+
+}
+
+.work{
+    max-width:285px;
+    height:216px;
+    vertical-align: top;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    display: inline-block;
+}
+.work img{
+   
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+
+/*blog*/
+
+.blog{
+    height: auto;
+    width: 100%;
+    margin-top:72px;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-bottom:100px;
+}
+.blog-brand{
+
+    text-align: center;
+    width: 30%;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 72px;
+}
+.blog-brand p{
+    color:#797979;
+}
+.blogs{
+    height:auto;
+    width:1240px;
+    margin-left: auto;
+    margin-right: auto;
+   margin-top: 35px;
+   
+}
+.blog-card{
+   
+    width:387px;
+   
+    position: relative;
+    vertical-align: top;
+
+    margin-right: 20px;
+    display: inline-block;
+}
+.img-container{
+    width:386;
+    height: 281;
+}
+.img-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.blog-card .content{
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+}
+
+/*footer*/
+
+footer{
+    height:398px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1%;
+}
+
+.list-container{
+    display: inline-block;
+    vertical-align: top;
+ 
+}
+
+.footer-info{
+
+    width: 30%;
+    height: 129px;
+    padding-top: 72px;
+    float:left;
+}
+.footer-info p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-lists{
+    padding-top: 72px;
+    float:right;
+
+ 
+}
+.footer-list{
+    padding-top: 24px;
+    list-style: none;
+    width: 170px;
+}
+.footer-item{
+    padding-bottom: 14px;
+}
