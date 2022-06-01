@@ -1,0 +1,14 @@
+Component              Time
+------------------------------
+Navbar          |   25 mins
+Color Card      |   20 mins
+Typography      |   20 mins
+Tabs            |   20 mins
+Buttons         |   15 mins
+Form            |   15mins + 35 mins
+List            |   Basic-->15mins custom-->25mins
+Table           |   25mins
+Card            |   2.5 hrs
+                |
+
+ Total              5 hrs 50 mins                

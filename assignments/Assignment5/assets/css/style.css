@@ -1,0 +1,419 @@
+
+/* typography */
+p{color:#54595E
+}
+.normal{
+    padding-top:20px;
+    width:90%;
+    font-size: 22px;
+}
+.fineprint{
+    padding-top:20px;
+    width:90%;
+    font-size: 16px;  
+}
+.lead-text{
+    padding-top:20px;
+    font-size: 32px;  
+}
+
+
+/*tab*/
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ABB5BE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: 1px solid #ABB5BE;
+    outline: none;
+    cursor: pointer;
+    color:#7749F8;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  .tabcontent p{
+      font-size: 22px;
+  }
+
+
+  /*button*/
+  .btn{
+    padding:20px 40px;
+    border:none;
+    border-radius: 5px;
+}
+
+
+/*form*/
+
+.list{
+    padding-top:20px;
+}
+
+.form-list{
+    list-style: none;
+}
+.form-list>li{
+    padding:20px;
+    border: 1px solid #ABB5BE;
+}
+.form-list>.active{
+    padding:20px;
+    border: 1px solid #ABB5BE;
+    background-color: #7749F8;
+   
+}
+.content{
+    padding:10px;
+}
+.form-list>li>a{
+    text-decoration: none;
+    font-size: 22px;
+    color:#343a40;
+}
+.form-list>li>.active{
+    text-decoration: none;
+    font-size: 22px;
+    color:white;
+    background-color: #7749F8;
+}
+.form-list>li>.active p{
+
+    color:white;
+  
+}
+
+.form-group{
+    padding:30px;
+    width:100%;
+
+
+}
+.checkbox-group{
+    height:250px;
+    width: 100%;
+}
+.checkbox{
+    position: relative;
+    float:left;
+    padding:20px;
+}
+.radio{
+    position: relative;
+    float:left;
+    padding:20px;
+
+}
+.checkbox>.inline{
+    display: inline-block;
+
+}
+.radio>.inline{
+    display: inline-block;
+  
+}
+input[type=text]{
+    height:50px;
+    width:600px;
+    border:2px solid #c6c2c2;
+}
+input[class=input-success]{
+    height:50px;
+    width:600px;
+    border:2px solid green;
+}
+input[class=input-error]{
+    height:50px;
+    width:600px;
+    border:2px solid red;
+}
+select{
+    height:50px;
+    width:600px;
+    border:2px solid #c6c2c2;
+    font-size: 20px;
+}
+select>option{
+    color: #6c757d;
+    font-size: 20px;
+}
+
+textarea{
+    height:200px;
+    width:600px;
+    border:2px solid #c6c2c2;
+    font-size: 20px;
+    color: #6c757d;
+}
+form .default{
+    accent-color: #7749F8;
+    width: 20px;
+    height: 20px;
+}
+form .disabled{
+    accent-color: #7749F8;
+    width: 20px;
+    height: 20px;
+}
+
+.form label{
+    font-size: 22px;
+    color: #6c757d
+}
+
+/*for button layout*/
+table{
+
+    width: 30%;
+    height: 300px;
+  }
+
+/* table section*/
+.buttongroup{
+    float:right;
+    padding:20px;
+}
+.buttongroup>.control{
+    padding:10px 10px;
+}
+.buttongroup>.num{
+  padding:10px 10px;
+}
+.buttongroup>.primary{
+    padding:10px 12px;
+  }
+.tg table {
+
+  height: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tg table td,
+.tg td {
+  padding: 20px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+  border-left: 0px solid;
+  border-right: 0px solid;
+}
+.tg th {
+  background-color: #7749F8;
+  color: #ffffff;
+}
+.tg tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.tg td {
+ padding:0;
+}
+
+
+/* card page */
+.cardgroup{
+    width:99%;
+ 
+    
+}
+.card{
+    width:280px;
+    float: left;
+    position: relative;
+    margin-left: 5%;
+    overflow: hidden;
+    box-shadow: 10px 10px 8px #efecec;
+
+}
+.insta{
+    height:385px;
+}
+.video{
+    height:331px;
+}
+.photo{
+    height: 385px;
+}
+
+.insta .insta-head{
+    height: 73px;
+    width: 100%;
+  
+
+}
+.insta .insta-body{
+    height: 220px;
+    width: 100%;
+ 
+}
+.insta-img{
+    padding:17px 10px;
+    float: left;
+  
+    border-radius: 50%;
+
+}
+.insta-info{
+    float: left;
+    padding:10px 0 10px 11px;
+    width:175px;
+}
+.insta-info p{
+    font-size: 12px;
+    width: 60%;
+}
+.insta-more{
+   
+    height:auto;
+    float:right;
+    padding:24.5px 10px 24.5px 0px;
+}
+.insta-body img{
+    height: 100%;
+    width: 100%;
+}
+.insta-buttons{
+    width: 100%;
+    height: 44px;
+   border-bottom: 1px solid rgb(208, 204, 204);
+}
+.button-container{
+    float: left;
+    padding: 14px 43.5px 12px 25px;
+
+}
+
+.insta-comments{
+    height: 44px;
+}
+.insta-comments input{
+    float:right;
+   height: 30px;
+    width: 198px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+.insta-comments img{
+   
+  
+    float: left;
+    padding:0 15px 10px ;
+   
+   
+}
+
+
+.video .body{
+    height: 60%;
+}
+.video .play{
+    position: absolute;
+    top:49%;
+    right:39%;
+  
+}
+.video .play img{
+    width: 100%;
+    height: 100%;
+}
+.video-info{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+.body img{
+    height: 100%;
+    width: 100%;
+}
+.photo-info{
+    height: 91px;
+    padding:10px
+}
+.photo-photo{
+    height: 220px;
+}
+.photo-foot{
+    height: 59px;
+}
+.photo-button{
+    background-color: #27AE60;
+    color: white;
+    padding:5px 10px;
+    border-radius: 8px;
+
+}
+.foot-info,.photo-comments,.photo-likes{
+    height: 59px;
+}
+.foot-info,.photo-comments,.photo-likes h5,img{
+    line-height: 25px;
+    float:left;
+}
+.foot-info{
+    width:147px;
+}
+.foot-info,.photo-comments,.photo-likes{
+    padding: 9px;
+    }
+    
+
+
+.hover-primary ,.focus{
+    color:white;
+    background-color: #5227CC;
+}
+.hover-outline{
+    color:white;
+    background-color: #7749F8;
+}
+.outline{
+    border: 1px solid #7749F8;
+    color :#7749F8;
+    background-color: white;
+}
+.primary{
+    background-color: #7749F8;
+    color:white;
+}
+.primary-dark{
+    background-color: #5227CC;
+}
+.primary-light{
+    background-color: #EBE5FC;
+}
+
+.s-outline{
+    border:1px solid rgb(108,117,125);
+    color:rgb(108,117,125);
+    background-color: white;
+}
+.hover-secondary,.s-focus{
+    background-color: #54595E;
+    color:white;
+}
+.s-hover-outline{
+    background-color: #54595E;
+    color:white;
+
+}
+
+.success{
+    background-color: #28A745;
+}
+.danger{
+    background-color: #DC3545;
+}
+.warning{
+    background-color: #FFC107;
+}
+.info{
+    background-color: #17A2B8;
+}
+
+
