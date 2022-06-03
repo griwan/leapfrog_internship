@@ -4,20 +4,33 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+.section{
+
+}
 section h1{
     width: 100%;
     text-align: center;
+    padding-top:40px;
 }
 .container{
     width:80%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 .row{
+    position: relative;
     width: 100%;
+    height: auto;
 }
 .col-4{
     width:25%;
+    float:left;
+    margin-top: 5%;
+    padding:10px;
+}
+.col-3{
+    width:33%;
     float:left;
     margin-top: 5%;
     padding:10px;
@@ -39,6 +52,7 @@ section h1{
     z-index: 0;
 }
 .logo{
+
     padding:40px 0px 40px 100px;
 }
 p{
@@ -47,6 +61,7 @@ p{
 .logo h1{
     font-size: 32px;
     line-height: 32px;
+    overflow: hidden;
 }
 .nav-left{
     float:left;
@@ -121,15 +136,10 @@ header{
 .shopnow-button{
     margin-top: 72px;
 }
-.btn{
-    padding:15px 140px;
-    font-size: 20px;
-    border: none;
-    
-}
+
 .carousel{
     position: absolute;
-    width: 200vw;
+    width: 300vw;
     z-index: 1;
     height: 100%;
     top: 200px;
@@ -182,14 +192,130 @@ header{
     padding: 1;
     
 }
+.center{
+    
+    text-align: center;
+   
+}
+.padding_40{
+    padding: 40px;
+}
 .product-detail * {
     padding: 5px;
+}
+.inspiration{
+    height: 70vh;
+    background-color: #FCF8F3;
+    padding:200px 80px;
+}
+.inspiration h1 p .btn{
+    margin:20px;
+}
+
+.inspiration h1{
+    text-align: left;
+    font-size: 40px;
+}
+.inspiration p{
+    font-size: 16px;
+    width: 368px;
+}
+
+.tricks{
+    height: 60vh;
+}
+
+
+.tricks-card{
+    max-width: 391px;
+    height: 370px;
+    margin: auto;
+    overflow: hidden;
+  
+    /* border: 1px solid black; */
+}
+.tricks .active{
+    box-shadow: 10px 5px 5px #e8e8e8;
+}
+.tricks-card-img{
+    width: 100%;
+   height: 65%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+.tricks-card-img img{
+        max-width:100%;
+        min-height: 100%;
+        object-fit: cover;
+}
+.tricks-card-info{
+    padding-top:30px;
+}
+.tricks-card h3{
+    margin:10px;
+    font-size: 24px;
+    width: 70%;
+}
+.tricks-card p{
+    margin:10px;
+}
+.tricks .arrow{
+    position: absolute;
+    top:50%;
+    z-index: 1;
+}
+.arrow-left{
+    left:1%;
+}
+.arrow-right{
+    right:2%;
 }
 .btn-primary{
     background-color: #E89F71;
     color:white;
 }
+.dot{
+    height: 11px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .dot-inactive{
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    background: #fff;
 
+    text-align: center;
+    display: inline-block;
+  }
+  .dot-active {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+ 
+    overflow: hidden;
+    background: #fff;
+    border: 2px solid #E89F71;
+    color: #E89F71;
+    text-align: center;
+    display: inline-block;
+ 
+}
+.btn{
+    padding:15px 140px;
+    font-size: 20px;
+    border: none;
+    
+}
+.btn-small{
+    padding: 16px 90px;
+ 
+}
 .left{
     float: left;
 }
