@@ -1,8 +1,13 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('/Assignment6/assets/Gilroy-Light.otf');
+  }
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: Gilroy;
 }
 .section{
 
@@ -17,12 +22,13 @@
 section h1{
     width: 100%;
     text-align: center;
-    padding-top:40px;
+
 }
 .container{
-    max-width:1440px;
+    width:80%;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
     position: relative;
 }
 .row{
@@ -116,9 +122,11 @@ header{
   
 }
 .nav-profile{
-    margin-top: 43px;
+    margin-top: 30px;
 }
-
+.burger{
+    display: none;
+}
 
 .hero-shopnow{
     width: 500px;
@@ -144,10 +152,12 @@ header{
 .shopnow-button{
     margin-top: 72px;
 }
-
+.carousel-images{
+    width: 100%;
+}
 .carousel{
     position: absolute;
-    width: 300vw;
+    width: 300%;
     z-index: 1;
     height: 100%;
     top: 200px;
@@ -155,6 +165,8 @@ header{
 }
 .carousel-img{
     padding: 0 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .feature-img,.feature-text{
@@ -211,22 +223,36 @@ header{
 .product-detail * {
     padding: 5px;
 }
+.inspiration-info{
+    width: 400px;
+    margin:200px 0px 200px 100px;
+}
 .inspiration{
     height: 70vh;
     background-color: #FCF8F3;
-    padding:200px 80px;
+   
+    overflow: hidden;
 }
-.inspiration h1 p .btn{
-    margin:20px;
+.inspiration-img-focus{
+height: 100%;
+}
+.inspiration-img-focus{
+    
+}
+.inspiration-carousel{
+  
+    height: 100%;
+    padding: 40px;
 }
 
 .inspiration h1{
     text-align: left;
     font-size: 40px;
+    width:378px
 }
 .inspiration p{
     font-size: 16px;
-    width: 368px;
+    width: 378px;
 }
 
 .tricks{
@@ -365,11 +391,11 @@ section .brand{
 
 
 .footer-wrapper{
-    width: 1440px;
+   
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    height: 38vh;
+  
  
     
 }
@@ -378,17 +404,28 @@ section .brand{
     padding-top:80px;
 }
 .foot-group{
-    padding:0px 100px;
+    padding:50px 0px;
+    margin-top: 87px;
+    width: 87%;
+    margin:auto;
+    border-top: 1px solid #898989;
     
 }
 .footer_contact{
     margin:16px 0px;
 }
+.footer-info{
+    width:25%;
+    padding-bottom: 20px;
+}
+.footer-lists{
+    padding-right: 10%;
+}
 .footer-info p{
     width: 250px;
 }
 .list-container{
-    padding:0px 40px;
+    padding-right:40px;
 }
 .footer-info h1{
     margin:0px 0px 16px 0px;
