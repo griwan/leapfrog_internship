@@ -114,7 +114,7 @@ header{
 
 
 .hero-shopnow{
-    width: 494px;
+    width: 500px;
     height: 553px;
     background-color: rgba(255, 255, 255, 0.739);
     position: absolute;
@@ -122,6 +122,7 @@ header{
     left:100px;
     padding:60px;
     z-index: 2;
+    overflow: hidden;
  
 }
 .hero-shopnow h1{
@@ -274,6 +275,25 @@ header{
     background-color: #E89F71;
     color:white;
 }
+.share{
+    text-align: center;
+    height: 100vh;
+}
+.wrapper{
+    position: relative;
+    height: 100%;
+}
+.share h1{
+    text-align: center;
+    padding:0;
+    font-size: 40px;
+}
+section .brand{
+    padding: 100px;
+    position: absolute;
+   width: 100%;
+    z-index: 2;
+}
 .dot{
     height: 11px;
     width: 10px;
@@ -306,6 +326,42 @@ header{
     display: inline-block;
  
 }
+.middle{
+   
+}
+
+.slider {
+    white-space: nowrap;
+    width: 1600px;
+    height: 80vh;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: left;
+    overflow-x: auto;
+  }
+  
+  .slider .slider-col {
+  
+    overflow: hidden;
+    margin: 5px;
+    display: inline-block;
+  }
+.slider img{
+    margin:10px;
+   
+    vertical-align: top;
+
+}
+.middle{
+  
+}
+
+
+.first{
+    left:0
+}
 .btn{
     padding:15px 140px;
     font-size: 20px;
@@ -322,3 +378,12 @@ header{
 .right{
     float: right;
 }
+.slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
