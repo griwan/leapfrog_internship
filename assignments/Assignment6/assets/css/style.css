@@ -170,22 +170,31 @@ header{
     height: auto;
 }
 
-.feature-img,.feature-text{
+.feature-text{
     padding:22px
 }
 .features{
 
-    padding: 80px 0;
-    height: 40vh;
+    margin: 20% 0;
+
 }
-.feature{
-    padding:40px;
+.feature-text h1{
+  font-size: 0.9vw;
 }
+.feature-text p{
+    font-size: 0.7vw;
+  }
+  .feature{
+    height: 7vh;
+    overflow: hidden;
+  }
+  
 
 .product-card{
     box-shadow: 10px 10px 8px #f3f3f3;
-   height: 40vh;
+   height: 400px;
    max-width: 285px;
+   position: relative;
    
     
 }
@@ -236,9 +245,10 @@ header{
 }
 .inspiration-img-focus{
 height: 100%;
+width: 3000px;
 }
 .inspiration-img-focus{
-    
+    position: relative;
 }
 .inspiration-carousel{
   
@@ -255,7 +265,49 @@ height: 100%;
     font-size: 16px;
     width: 378px;
 }
+.room-overlay{
+    position: absolute;
+    top:72%;
+    left: 1%;
+}
+.room-overlay-block1{
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(3px);
+    padding: 32px;
+}
+.product-card .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.222);
+    position: absolute;
+    text-align: center; 
 
+}
+.overlay-wrapper{
+    position: absolute;
+    top:30%;
+    left: 20%;
+}
+.text-wrapper>div{
+    padding:30px 10px;
+}
+.overlay-select{
+    opacity: 0;
+}
+.overlay-select:hover{
+    opacity: 1;
+}
+.room-overlay>div{
+    display: inline-block;
+}
+.room-overlay-block1>div>*{
+    display: inline-block;
+}
+.room-overlay-button{
+    border: 0;
+    background-color: #e89f71;
+    padding: 12px;
+}
 .tricks{
     height: 60vh;
 }
@@ -308,6 +360,10 @@ height: 100%;
 .btn-primary{
     background-color: #E89F71;
     color:white;
+}
+.btn-secondary{
+    background-color: white;
+    color:#E89F71;
 }
 .share{
     text-align: center;
@@ -458,6 +514,10 @@ section .brand{
 .btn-small{
     padding: 16px 90px;
  
+}
+.btn-xsmall{
+    padding: 10px 25px;
+    
 }
 .left{
     float: left;
