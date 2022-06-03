@@ -7,13 +7,20 @@
 .section{
 
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 section h1{
     width: 100%;
     text-align: center;
     padding-top:40px;
 }
 .container{
-    width:80%;
+    max-width:1440px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -293,6 +300,7 @@ section .brand{
     position: absolute;
    width: 100%;
     z-index: 2;
+    padding:20px;
 }
 .dot{
     height: 11px;
@@ -332,7 +340,7 @@ section .brand{
 
 .slider {
     white-space: nowrap;
-    width: 1600px;
+    width: 1440px;
     height: 80vh;
     padding: 50px;
     margin-left: auto;
@@ -354,13 +362,54 @@ section .brand{
     vertical-align: top;
 
 }
-.middle{
-  
+
+
+.footer-wrapper{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    height: 38vh;
+ 
+    
 }
+.footer-wrapper .clearfix{
+    border-top: 1px solid #D8D8D8;
+    padding-top:80px;
+}
+.foot-group{
+    padding:0px 100px;
+    
+}
+.footer_contact{
+    margin:16px 0px;
+}
+.footer-info p{
+    width: 250px;
+}
+.list-container{
+    padding:0px 40px;
+}
+.footer-info h1{
+    margin:0px 0px 16px 0px;
+}
+.footer-item{
+    padding:12px 0px;
+}
+.footer-item a{
 
-
-.first{
-    left:0
+    text-decoration: none;
+    color:#616161;
+}
+.footer-search img{
+    vertical-align: bottom;
+}
+.footer_form form{
+    margin:16px 0px;
+}
+.footer-search input{
+    width: 242px;
+    height: 45px;
 }
 .btn{
     padding:15px 140px;
