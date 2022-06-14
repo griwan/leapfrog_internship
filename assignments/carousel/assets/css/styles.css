@@ -1,0 +1,65 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel{
+  width: 960px;
+  height: 500px;
+	overflow:hidden ;
+	position: relative;
+}
+.carousel-wrapper{
+	display: flex;
+	margin-left: 0px;
+}
+.carousel-btn{
+	position: absolute;
+	background: url('https://www.svgrepo.com/show/55207/left-arrow.svg') center no-repeat;	
+	background-size: 80%;
+	background-color: white;
+	width: 50px;
+	height: 100%;
+	opacity: 0.3;
+}
+.left-btn {
+	left: 0;
+}
+.left-btn:hover {
+	opacity: 0.5;
+}
+.right-btn {
+	transform: rotate(180deg);
+	right: 0;
+}
+.right-btn:hover{
+	opacity: 0.5;
+}
+
+.dot-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	margin-left:0;
+	margin-right: 0;
+	height: 20px;
+	text-align: center;
+}
+
+.dot {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	background:url('https://www.svgrepo.com/show/35641/dot.svg') no-repeat;
+	opacity: 0.2;
+}
+
+.active {
+	opacity: 1;
+}
+.dot:hover {
+	opacity: 1;
+}
