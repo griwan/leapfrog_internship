@@ -39,7 +39,9 @@ function slidingAnimation(width) {
 		let marginValue = parseInt(carouselPropertyTemp.marginLeft);
 
 
+		//check if the values exceed the boundary
 
+		
 		if (marginValue > 0) {
 			CarouselWrapper.style.marginLeft = '0px';
 			currentImage = 1;
