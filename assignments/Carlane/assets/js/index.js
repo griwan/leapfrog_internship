@@ -26,6 +26,7 @@ function createLanes(){
 //player object with event listener
 class Player{
 	constructor(){
+		this.lane = 0;
 		this.sprite = new gameSprite(640,Lane_Width/3,'assets/img/Audi.png',screen);
 		this.controller = document.createElement('div');
 		document.addEventListener('keydown',(e)=>{
@@ -37,20 +38,37 @@ class Player{
 			this.sprite.draw();
 		}
 		inputHandler(key){
-			switch(key.code){
-				case 'ArrowLeft':{
-			
-					this.sprite.x -= 40;
+			if(key.code=='ArrowLeft'){
+				
+					if(this.lane>0){
+						console.log(this.lane)
+						this.lane =this.lane -1;
+						this.sprite.x =this.lane*Lane_Width+Lane_Width/3 ;
+					}
+					else{
+						this.lane = 0;
+					}
+				
 			
 				}
-				case 'ArrowRight':{
-					this.sprite.x +=20;
+				else{
+
+				
+			
+					if(this.lane<2){
+						this.lane +=1;
+						this.sprite.x =this.lane*Lane_Width+Lane_Width/3;
+					}
+					else{
+						this.lane = 2
+					}
+						
 				}
-			}
+			
 			if(this.sprite.x<=0){this.sprite.x = 10}
 			if(this.sprite.x+this.sprite.img.width >screen.clientWidth){this.sprite.x = screen.clientWidth - this.sprite.img.width}
 		}
-	}
+}
 	
 	
 
@@ -117,7 +135,7 @@ lanes = document.querySelectorAll('.lane')
 let p1 = new Player();
 
 
-let pos=[0,400,800];
+let pos=[0,600,900];
 function createBufferScreen(){
 	for(j=0;j<=2;j++){
 		for(i =0;i<=2;i++){
