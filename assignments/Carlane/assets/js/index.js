@@ -174,7 +174,7 @@ function gameLoop(){
 				Menu_Button.innerHTML = 'Restart?'
 				Overlay_Game.style.display = 'none';
 				Overlay.style.display ='flex';
-				score = 0;
+		
 				p1 = new Player();
 			}
 		}
@@ -199,6 +199,7 @@ Pause_Btn.addEventListener('click',()=>{
 })
 
 Menu_Button.addEventListener('click',()=>{
+	score = 0;
 	screen.style.animation = 'color 1s infinite linear'
 	Overlay_Game.style.display = 'block';
 	Overlay.style.display ='none';
