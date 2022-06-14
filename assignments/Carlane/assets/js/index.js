@@ -1,11 +1,17 @@
-const screen = document.getElementById('game-screen');
-const Lane_Width = 250;
-const Number_Lanes = 3;
 
-let gameObjects = []
-let score = 0;
-const scorediv = document.getElementsByClassName('score');
 
+
+//initialize welcome screen
+Score_Div.innerHTML = 'Welcome';
+Menu_Button.innerHTML = 'Start'
+
+
+let pauseToggle = false;
+let gameObjects = []//all 2d objects of the game
+let score = 0;//tracks score
+
+
+//creates three lanes for the street
 function createLanes(){
 	for(i=0;i<Number_Lanes;i++){
 		let lane = document.createElement('div');
@@ -16,6 +22,8 @@ function createLanes(){
 	}
 }
 
+
+//player object with event listener
 class Player{
 	constructor(){
 		this.sprite = new gameSprite(640,Lane_Width/3,'assets/img/Audi.png',screen);
@@ -46,7 +54,7 @@ class Player{
 	
 	
 
-
+//spritle loading class for images
 class gameSprite{
   constructor(y,x,img_src,lane){
     this.y = y;
@@ -101,21 +109,19 @@ class gameSprite{
 	
 	
 }
+
+
 createLanes();
 
 lanes = document.querySelectorAll('.lane')
 let p1 = new Player();
-// b = new gameSprite(0,Lane_Width/3,'assets/img/Car.png',lanes[1]);
-// b2 = new gameSprite(400,Lane_Width/3,'assets/img/Ambulance.png',lanes[0]);
 
-// p1= new Player(b2);
 
 let pos=[0,400,800];
 function createBufferScreen(){
 	for(j=0;j<=2;j++){
 		for(i =0;i<=2;i++){
 			if(Math.random()<0.5){
-			
 				b = new gameSprite(-900+pos[j],Lane_Width/3,'assets/img/Ambulance.png',lanes[i])
 				break
 			}
@@ -130,25 +136,30 @@ function detectCollision(a,b){
 	let ax = a.x+i*250;
 
 
-	// 	if(a.y+a.h>=b.y && b.y+b.h>=a.y){
+
 		if (ax < b.x + b.w &&
 			ax + a.w > b.x &&
 			a.y < b.y + b.h &&
 			a.h + a.y > b.y) {
 					return true;
 		}
-	// }
+
 		return false;
 
 
 }
 
+
+//main game loop 
 function gameLoop(){
-	p1.draw();
-	scorediv[1].innerHTML = `Score:${score}`;
+	screen.style.animation = !pauseToggle?'color 1s infinite linear':'';
+	if(!pauseToggle)
+		p1.draw();
+	Score_Div[1].innerHTML = `Score:${score}`;
 	gameObjects.forEach(o=>{
 		if(p1.sprite!=o){
-			o.move()
+			if(!pauseToggle)
+				o.move()
 	
 			if(detectCollision(o,p1.sprite))
 			{clearInterval(game);
@@ -158,11 +169,11 @@ function gameLoop(){
 				});
 				gameObjects = [];
 				createBufferScreen();
-				scorediv[0].innerHTML = `Score:${score}`;
-
-				button.innerHTML = 'Restart?'
-				overlay_game.style.display = 'none';
-				overlay.style.display ='flex';
+				Score_Div[0].innerHTML = `Score:${score}`;
+				screen.style.animation = ''
+				Menu_Button.innerHTML = 'Restart?'
+				Overlay_Game.style.display = 'none';
+				Overlay.style.display ='flex';
 				score = 0;
 				p1 = new Player();
 			}
@@ -171,19 +182,26 @@ function gameLoop(){
 			})
 }
 
+//initialize position of cars
+
 createBufferScreen()
 
 
 
 
-overlay = document.getElementsByClassName('game-over')[0]
-overlay_game = document.getElementsByClassName('game-on')[0]
-button = document.getElementById('main');
-scorediv.innerHTML = 'Welcome';
-button.innerHTML = 'Start'
-button.addEventListener('click',()=>{
-	overlay_game.style.display = 'block';
-	overlay.style.display ='none';
+Pause_Btn.addEventListener('click',()=>{
+	if(pauseToggle==false){
+		pauseToggle = true;
+	}
+	else{
+		pauseToggle = false
+	}
+})
+
+Menu_Button.addEventListener('click',()=>{
+	screen.style.animation = 'color 1s infinite linear'
+	Overlay_Game.style.display = 'block';
+	Overlay.style.display ='none';
 	
 game = setInterval(gameLoop,1000/60)
 })

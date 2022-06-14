@@ -13,11 +13,11 @@ body{
     position: relative;
     display: flex;
     border: 1px solid black;
-    background:url('/assignments/Carlane/assets/img/lane.png');
+    background:url('https://griwan.github.io/leapfrog_internship/assignments/Carlane/assets/img/lane.png');
     background-size: 750px 100px;
     background-repeat: repeat-y;
     overflow: hidden;
-    animation: color 1s infinite linear;
+    /* animation: color 1s infinite linear; */
 }
 
 #game-screen img{
