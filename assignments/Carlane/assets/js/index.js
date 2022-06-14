@@ -115,7 +115,7 @@ function createBufferScreen(){
 	for(j=0;j<=2;j++){
 		for(i =0;i<=2;i++){
 			if(Math.random()<0.5){
-				console.log(`choosing lane ${i}`)
+			
 				b = new gameSprite(-900+pos[j],Lane_Width/3,'assets/img/Ambulance.png',lanes[i])
 				break
 			}
